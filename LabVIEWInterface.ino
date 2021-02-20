@@ -737,7 +737,7 @@ void syncLV()
 // Compute Packet Checksum
 unsigned char checksum_Compute(unsigned char command[])
 {
-  //unsigned char checksum moet op 0 gezet worden >> anders error in LabVIEW 
+  //unsigned char checksum moet op 0 gezet worden >> error 5003 in LabVIEW 
   unsigned char checksum = 0;
   for (int i=0; i<(COMMANDLENGTH-1); i++)
   {
