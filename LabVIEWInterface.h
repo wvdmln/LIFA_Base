@@ -21,11 +21,11 @@
 
 #define FIRMWARE_MAJOR 02        
 #define FIRMWARE_MINOR 00  
-#if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
-#define DEFAULTBAUDRATE 9600    // Defines The Default Serial Baud Rate (This must match the baud rate specifid in LabVIEW)
-#else
+//#if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
+//#define DEFAULTBAUDRATE 9600    // Defines The Default Serial Baud Rate (This must match the baud rate specifid in LabVIEW)
+//#else
 #define DEFAULTBAUDRATE 115200
-#endif
+//#endif
 #define MODE_DEFAULT 0            // Defines Arduino Modes (Currently Not Used)
 #define COMMANDLENGTH 15          // Defines The Number Of Bytes In A Single LabVIEW Command (This must match the packet size specifid in LabVIEW)
 #define STEPPER_SUPPORT 1         // Defines Whether The Stepper Library Is Included - Comment This Line To Exclude Stepper Support
